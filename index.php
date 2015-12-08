@@ -3,9 +3,10 @@
 
   $doc             = JFactory::getDocument();
 
+  JHtml::_('bootstrap.framework');
+  
   // Add Stylesheets
-  $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap.min.css');
-  $doc->addStyleSheet($this->baseurl . '/media/jui/css/bootstrap-responsive.min.css');
+  JHtmlBootstrap::loadCss();
   $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/template.css');
 
   // Add Javascript
